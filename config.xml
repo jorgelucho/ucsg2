@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.example"
+    version   = "1.0.0">
+
+<name>UCSG</name>
+
+<description>
+Revisa tus notas, asistencia, horarios y eventos con un solo click
+</description>
+
+<author href="http://ucsg.edu.ec" email="misha_1984@hotmail.com">
+Irene Serrano y Michelle Ortega
+</author>
+
+<icon src="images/icon.png" width="48" height="48" />
+
+</widget>

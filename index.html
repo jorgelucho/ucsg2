@@ -1,0 +1,574 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<link href="jquery.mobile.structure-1.1.0.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="jquery.mobile-1.1.0.min.js"></script>
+<script type="text/javascript" src="cordova-1.9.0.js"></script>
+</head>
+<body onload="init();">
+<!-- login -->
+<div data-role="page" data-theme="a" data-fullscreen="true" id="login">
+  <div data-role="header" data-position="fixed" data-id="piel">
+    <h1>LOGIN</h1>
+  </div>
+  <div data-role="content" style="padding:0 10px;"> <br>
+    <h3 align="center"></h3>
+    <center>
+      <br>
+      <img src="images/catol.png" alt="Logo Institucional" width="267" height="148">
+    </center>
+    </br>
+    <div class="message">zzz</div>
+    </p>
+    <form name="form-login" id="form-login">
+      <label for="Usuario">Usuario</label>
+      <input type="text" name="usuario" id="usuario">
+      <br />
+      <label for="Password">Contrase&ntilde;a</label>
+      <input type="password" name="pass" id="pass">
+      <input type="submit" value="Ingresar">
+    </form>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed" data-id="piel">
+    <h3>©Copyright 2012 Universidad Cátolica</h3>
+  </div>
+</div>
+<!-- ini -->
+<div data-role="page" data-theme="a" style="background-image:url(images/cato.png)" data-fullscreen="true" id="ini">
+  <div data-role="header" >
+    <div id="btn-user"></div>
+    <h1>UCSG-MOVIL</h1>
+    <a id="btn-logout" data-icon="delete" class="ui-btn-right">Salir</a>
+  </div>
+  <div data-role="content">
+    <h3 align="center"></h3>
+    <center>
+    </center>
+    <br>
+    <br>
+    <div class="ui-grid-a">
+      <div class="ui-block-a">
+        <center>
+          <p><a href="#pag2" data-transition="slide"><img src="images/notass.png"width="90" height="90"></a></p>
+          <p><a href="#pag2" data-transition="slide">NOTAS</a></p>
+          <p>&nbsp;</p>
+        </center>
+      </div>
+      <div class="ui-block-b">
+        <center>
+          <p><a href="#pag3" data-transition="slide"> <img src="images/asistencia1.png" width="90" height="90"></a></p>
+          <p><a href="#pag3" data-transition="slide">ASISTENCIA</a></p>
+          <p>&nbsp;</p>
+        </center>
+      </div>
+      <div class="ui-block-a">
+        <center>
+          <p><a href="#pag4" data-transition="slide"> <img src="images/hora.png" width="90" height="90"></a></p>
+          <p><a href="#pag4" data-transition="slide">HORARIOS</a></p>
+          <p>&nbsp;</p>
+        </center>
+      </div>
+      <div class="ui-block-b">
+        <center>
+          <p><a href="#pag5" data-transition="slide"> <img src="images/eve1.png" width="90" height="90"></a></p>
+          <p><a href="#pag5" data-transition="slide">EVENTOS</a></p>
+          <p>&nbsp;</p>
+        </center>
+      </div>
+      <div class="ui-block-a">
+        <center>
+          <p><a href="#contact" data-transition="slide"> <img src="images/contacto.png" width="90" height="90"></a></p>
+          <p><a href="#contact" data-transition="slide">CONTACTO</a></p>
+          <p>&nbsp;</p>
+        </center>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h3>©Copyright 2012 Universidad Cátolica</h3>
+  </div>
+</div>
+<!-- pag2 -->
+<div data-role="page" data-theme="a" id="pag2" data-add-back-btn="true">
+  <div data-role="header" >
+    <h1>UCSG-MOVIL</h1>
+  </div>
+  <div data-role="content">
+    <p></p>
+    <h3 align="center">NOTAS SEMESTRALES</h3>
+    <div class="ui-grid-d" align="center" >
+      <div class="ui-block-a" >
+        <p class="Emcbezado1">MATERIA</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="Emcbezado1">PARALELO</p>
+      </div>
+      <div class="ui-block-c">
+        <p class="Emcbezado1">PRIMER PARCIAL</p>
+      </div>
+      <div class="ui-block-d">
+        <p class="Emcbezado1">SEGUNDO PARCIAL</p>
+      </div>
+      <div class="ui-block-e">
+        <p class="Emcbezado1">SUPLETORIO</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="Marco4 n_1_1"></p>
+      </div>
+      <div class="ui-block-b">
+        <p class="Marco4 n_1_2"></p>
+      </div>
+      <div class="ui-block-c">
+        <p class="Marco4 n_1_3"></p>
+      </div>
+      <div class="ui-block-d">
+        <p class="Marco4 n_1_4"></p>
+      </div>
+      <div class="ui-block-e">
+        <p class="Marco3 n_1_5"></p>
+      </div>
+      <div class="ui-block-a">
+        <p class="Marco4 n_2_1"></p>
+      </div>
+      <div class="ui-block-b">
+        <p class="Marco4 n_2_2"></p>
+      </div>
+      <div class="ui-block-c">
+        <p class="Marco4 n_2_3"></p>
+      </div>
+      <div class="ui-block-d">
+        <p class="Marco4 n_2_4"></p>
+      </div>
+      <div class="ui-block-e">
+        <p class="Marco3 n_2_5"></p>
+      </div>
+      <div class="ui-block-a">
+        <p class="Marco4 n_3_1"></p>
+      </div>
+      <div class="ui-block-b">
+        <p class="Marco4 n_3_2"></p>
+      </div>
+      <div class="ui-block-c">
+        <p class="Marco4 n_3_3"></p>
+      </div>
+      <div class="ui-block-d">
+        <p class="Marco4 n_3_4"></p>
+      </div>
+      <div class="ui-block-e">
+        <p class="Marco3 n_3_5"></p>
+      </div>
+      <div class="ui-block-a">
+        <p class="Marco4 n_4_1"></p>
+      </div>
+      <div class="ui-block-b">
+        <p class="Marco4 n_4_2"></p>
+      </div>
+      <div class="ui-block-c">
+        <p class="Marco4 n_4_3"></p>
+      </div>
+      <div class="ui-block-d">
+        <p class="Marco4 n_4_4"></p>
+      </div>
+      <div class="ui-block-e">
+        <p class="Marco3 n_4_5"></p>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a"  data-position="fixed" data-id="piel">
+    <h3>©Copyright 2012 Universidad Cátolica</h3>
+  </div>
+</div>
+
+<!-- pag3 -->
+<div data-role="page" data-theme="a" id= "pag3" data-add-back-btn="true">
+  <div data-role="header" >
+    <h1>UCSG-MOVIL</h1>
+  </div>
+  <div data-role="content">
+    <p></p>
+    <h3 align="center">ASISTENCIA SEMESTRALES</h3>
+    <div class="ui-grid-d" align="center" >
+      <div class="ui-block-a" >
+        <p class="Emcbezado2">MATERIA</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="Emcbezado2">ABR.</p>
+      </div>
+      <div class="ui-block-c">
+        <p class="Emcbezado2">TOTAL ASIST. ALUMNO</p>
+      </div>
+      <div class="ui-block-d">
+        <p class="Emcbezado2">TOTAL HORAS DICTADAS</p>
+      </div>
+      <div class="ui-block-e">
+        <p class="Emcbezado2">% TOTAL</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="Marco6 a_1_1"></p>
+      </div>
+      <div class="ui-block-b">
+        <p class="Marco6 a_1_2"></p>
+      </div>
+      <div class="ui-block-c">
+        <p class="Marco6 a_1_3"></p>
+      </div>
+      <div class="ui-block-d">
+        <p class="Marco6 a_1_4"></p>
+      </div>
+      <div class="ui-block-e">
+        <p class="Marco5 a_1_5"></p>
+      </div>
+      <div class="ui-block-a">
+        <p class="Marco6 a_2_1"></p>
+      </div>
+      <div class="ui-block-b">
+        <p class="Marc6 a_2_2"></p>
+      </div>
+      <div class="ui-block-c">
+        <p class="Marco6 a_2_3"></p>
+      </div>
+      <div class="ui-block-d">
+        <p class="Marco6 a_2_4"></p>
+      </div>
+      <div class="ui-block-e">
+        <p class="Marco5 a_2_5"></p>
+      </div>
+      <div class="ui-block-a">
+        <p class="Marco6 a_3_1"></p>
+      </div>
+      <div class="ui-block-b">
+        <p class="Marco6 a_3_2"></p>
+      </div>
+      <div class="ui-block-c">
+        <p class="Marco6 a_3_3"></p>
+      </div>
+      <div class="ui-block-d">
+        <p class="Marco6 a_3_4"></p>
+      </div>
+      <div class="ui-block-e">
+        <p class="Marco5 a_3_5"></p>
+      </div>
+      <div class="ui-block-a">
+        <p class="Marco6 a_4_1"></p>
+      </div>
+      <div class="ui-block-b">
+        <p class="Marco6 a_4_2"></p>
+      </div>
+      <div class="ui-block-c">
+        <p class="Marco6 a_4_3"></p>
+      </div>
+      <div class="ui-block-d">
+        <p class="Marco6 a_4_4"></p>
+      </div>
+      <div class="ui-block-e">
+        <p class="Marco5 a_4_5"></p>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed" data-id="piel">
+    <h3>©Copyright 2012 Universidad Cátolica</h3>
+  </div>
+</div>
+
+<!-- pag4 -->
+<div data-role="page" data-theme="a" id= "pag4" data-add-back-btn="true">
+  <div data-role="header">
+    <h1>UCSG-MOVIL</h1>
+  </div>
+  <div data-role="content">
+    <p></p>
+    <h3 align="center">HORARIOS DE CLASE POR MATERIA</h3>
+    <div class="ui-grid-d" align="center" >
+      <div class="ui-block-a" >
+        <p class="Emcbezado3">MALLA</p>
+      </div>
+      <div class="ui-block-b">
+        <p class="Emcbezado3">MATERIAS Y PARALELOS</p>
+      </div>
+      <div class="ui-block-c">
+        <p class="Emcbezado3">PROFESOR</p>
+      </div>
+      <div class="ui-block-d">
+        <p class="Emcbezado3">GRUPO</p>
+      </div>
+      <div class="ui-block-e">
+        <p class="Emcbezado3"> HORARIO</p>
+      </div>
+      <div class="ui-block-a">
+        <p class="Marco8 h_1_1"></p>
+      </div>
+      <div class="ui-block-b">
+        <p class="Marco8 h_1_2"></p>
+      </div>
+      <div class="ui-block-c">
+        <p class="Marco8 h_1_3"></p>
+      </div>
+      <div class="ui-block-d">
+        <p class="Marco8 h_1_4"></p>
+      </div>
+      <div class="ui-block-e">
+        <p class="Marco7 h_1_5"></p>
+      </div>
+      <div class="ui-block-a">
+        <p class="Marco8 h_2_1"></p>
+      </div>
+      <div class="ui-block-b">
+        <p class="Marco8 h_2_2"></p>
+      </div>
+      <div class="ui-block-c">
+        <p class="Marco8 h_2_3"></p>
+      </div>
+      <div class="ui-block-d">
+        <p class="Marco8 h_2_4"></p>
+      </div>
+      <div class="ui-block-e">
+        <p class="Marco7 h_2_5"></p>
+      </div>
+      <div class="ui-block-a">
+        <p class="Marco8 h_3_1"></p>
+      </div>
+      <div class="ui-block-b">
+        <p class="Marco8 h_3_2"></p>
+      </div>
+      <div class="ui-block-c">
+        <p class="Marco8 h_3_3"></p>
+      </div>
+      <div class="ui-block-d">
+        <p class="Marco8 h_3_4"></p>
+      </div>
+      <div class="ui-block-e">
+        <p class="Marco7 h_3_5"></p>
+      </div>
+      <div class="ui-block-a">
+        <p class="Marco8 h_4_1"></p>
+      </div>
+      <div class="ui-block-b">
+        <p class="Marco8 h_4_2"></p>
+      </div>
+      <div class="ui-block-c">
+        <p class="Marco8 h_4_3"></p>
+      </div>
+      <div class="ui-block-d">
+        <p class="Marco8 h_4_4"></p>
+      </div>
+      <div class="ui-block-e">
+        <p class="Marco7 h_4_5"></p>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed" data-id="piel">
+    <h3>©Copyright 2012 Universidad Cátolica</h3>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- pag5 -->
+<div data-role="page" data-theme="a" id= "pag5" data-add-back-btn="true">
+  <div data-role="header">
+    <h1>UCSG-MOVIL</h1>
+  </div>
+  <div data-role="content">
+    <h3 align="center">Eventos</h3>
+    <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar">
+      <li><a href="#ta"><img src="images/taller.png">
+        <h3>Programas - Taller</h3>
+        <p>Mira los programas</p>
+        </a> <a href="#mta">Donde</a>
+      <li><a href="#se"><img src="images/se.png">
+        <h3>Seminarios</h3>
+        <p>Mira los seminarios</p>
+        </a> <a href="#mse">Donde</a>
+      <li><a href="#cu"><img src="images/curs.png">
+        <h3>Cursos</h3>
+        <p>Mira los cursos que se han abierto</p>
+        </a> <a href="#mcu">Donde</a>
+    </ul>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed" data-id="piel">
+    <h3>©Copyright 2012 Universidad Cátolica</h3>
+  </div>
+</div>
+<div data-role="page" id="ta" data-theme="a" data-add-back-btn="true">
+  <div data-role="header"  >
+    <h1>Programas</h1>
+  </div>
+  <div data-role="content" data-theme="a">
+    <h3 align="center"></h3>
+    <p>
+      <center>
+        <strong>Programa de Capacitación en Proceso Cárnico</strong>
+      </center>
+    </p>
+    <p align="justify">Información sobre la materia prima,insumos y equipos para proceso cánicos.</p>
+    <br>
+    <p>
+      <center>
+        <strong><strong>II Taller de Simulación Pediátrica en Patología respiratoria en niños</strong></strong>
+      </center>
+    </p>
+    <p align="justify"> Prácticas en simulación en caso clínicos documentales de Neumonía, Neumonía complicada, Síndrome de insuficiencia respiratoria aguda, Asma bronquial, manejo de la hipoxia, Medidas terápeuticas y estrategias de ventilación invasiva.</p>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed" data-id="piel">
+    <h3>©Copyright 2012 Universidad Cátolica</h3>
+  </div>
+</div>
+<div data-role="page" id="mta"  data-theme="a" data-add-back-btn="true">
+  <div data-role="header" >
+    <h1>Programas</h1>
+  </div>
+  <div data-role="content" data-theme="a">
+    <h3 align="center">Donde</h3>
+    <p>
+      <center>
+        <strong>Programa de Capacitación en Proceso Cárnico</strong>
+      </center>
+    </p>
+    <p align="justify">Inscribete por internet. Horario matutino de 08:00 a 11:00. De Jueves y Sabado. Precio $100</p>
+    <br>
+    <p>
+      <center>
+       <strong> II Taller de Simulación Pediátrica en Patología respiratoria en niños</strong>
+      </center>
+    </p>
+    <p align="justify"><strong>Lugar:</strong> Laboratorio de Simulación Cibernéticas UCSG. Valor: $250 Médicos, $200 Enfermo, $150 Estudiantes de la UCSG. 
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed" data-id="piel">
+    <h3>©Copyright 2012 Universidad Cátolica</h3>
+  </div>
+</div>
+<div data-role="page" id="se" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" >
+    <h1>Seminarios</h1>
+  </div>
+  <div data-role="content" data-theme="a">
+    <h3 align="center"></h3>
+    <p>
+      <center>
+      <strong>Diseño de Interior</strong></p>
+    <p align="justify">Forma parte del fantastico mundo del Diseño.</p>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed" data-id="piel">
+    <h3>©Copyright 2012 Universidad Cátolica</h3>
+  </div>
+</div>
+<div data-role="page" id="mse" data-theme="a" data-add-back-btn="true">
+  <div data-role="header"  >
+    <h1>Seminario</h1>
+  </div>
+  <div data-role="content">
+    <h3 align="center">Donde</h3>
+    <p align="justify"><strong>Informe:</strong> Facultad de Arquitecto y Diseño. Diseñadora Ana Zapata de Herrera- Directora. Teléfono: 2206951 Ext: 1209 - 1206</p>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed" data-id="piel">
+    <h3>©Copyright 2012 Universidad Cátolica</h3>
+  </div>
+</div>
+<div data-role="page" id="cu" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" >
+    <h1>Cursos</h1>
+  </div>
+  <div data-role="content" data-theme="a">
+    <h3 align="center">Cursos</h3>
+    <p>
+      <center>
+        <strong>III CONCURSO TECNOCATOL</strong>
+      </center>
+    </p>
+    <p align="justify">TECNOCATOL es un concurso interdisciplinado para estudiantes que fomenta la generacion de ideas y la innovación, a través de la propuesta y desarrollo de proyectos que permitan alternativas de solución de los problemas de la sociedad.</p>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed" data-id="piel">
+    <h3>©Copyright 2012 Universidad Cátolica</h3>
+  </div>
+</div>
+<div data-role="page" id="mcu" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" >
+    <h1>Cursos</h1>
+  </div>
+  <div data-role="content">
+    <h3 align="center">Donde</h3>
+    <p>
+      <center>
+        <strong>III CONCURSO TECNOCATOL</strong>
+      </center>
+    </p>
+    <p align="justify"><strong>Lugar:</strong> Aula Magna Monseñor Cesar A. Mosquera Coral. Contacto: Sistema de Investigación y Desarrollo - SINDE. Telf:2206950 Ext:2638 - 2915. 
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed" data-id="piel">
+    <h3>©Copyright 2012 Universidad Cátolica</h3>
+  </div>
+</div>
+<!-- prof1 -->
+<div data-role="page" data-theme="a" id="prof1" data-add-back-btn="true">
+  <div data-role="header" >
+    <h1>UCSG-MOVIL</h1>
+  </div>
+  <div data-role="content">
+    <h3 align="center">MINI-CURRICULUM</h3>
+    <center>
+     <img src="images/morieno.png">
+    </center>
+  </div>
+  </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h3>©Copyright 2012 Universidad Cátolica</h3>
+</div>
+</div>
+<!-- prof2 -->
+<div data-role="page" data-theme="a" id="prof2" data-add-back-btn="true">
+  <div data-role="header" >
+    <h1>UCSG-MOVIL</h1>
+  </div>
+  <div data-role="content">
+    <center>
+      <img src="images/villota.png">
+    </center>
+  </div>
+  
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h3>©Copyright 2012 Universidad Cátolica</h3>
+</div>
+</div>
+</div>
+<!-- contact -->
+<div data-role="page" data-theme="a" id="contact" data-add-back-btn="true">
+  <div data-role="header" >
+    <h1>CONTACTO</h1>
+  </div>
+  <div data-role="content">
+	<form id="form-contact" method="post">
+      <div data-role="fieldcontain">
+        <label for="cnames">*Nombre y Apellidos:</label>
+        <input type="text" id="cnames" name="cnames" required placeholder="Nombre y Apellidos" autocomplete="off">
+      </div>
+      <div data-role="fieldcontain">
+        <label for="cemail">*Email:</label>
+        <input type="email" id="cemail" name="cemail" required placeholder="Ingrese su email" autocomplete="off">
+      </div>
+      <div data-role="fieldcontain" class="text-field">
+        <label for="cmobilephone">Celular:</label>
+        <input type="number" name="cmobilephone" id="cmobilephone" placeholder="Ingrese su número" autocomplete="off">
+      </div>
+      <div data-role="fieldcontain">
+        <label for="cmessage">*Consulta:</label>
+        <textarea name="cmessage" id="cmessage" placeholder="Ingrese su comentario o consulta" required></textarea>
+      </div>
+      <div data-role="fieldcontain" class="accept">
+        <input id="send-contact" type="submit" value="Enviar" data-inline="false">
+      </div>
+    </form>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h3>©Copyright 2012 Universidad Cátolica</h3>
+  </div>
+</div>
+<script type="text/javascript" src="index.js"></script> 
+<script type="text/javascript" charset="utf-8" src="storage.js"></script>
+</body>
+</html>
